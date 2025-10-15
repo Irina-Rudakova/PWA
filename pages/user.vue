@@ -32,9 +32,9 @@
 <template>
     <div class="my-0 w-full block">
         <section class="flex-col mb-8">
-            <div class="flex items-center gap-4 pb-8">
-                <UChip inset>
-                    <UAvatar icon="i-lucide-user-round" src="" size="2xl" />
+            <div class="flex items-center mr-4 pb-8">
+                <UChip inset size="2xl">
+                    <UAvatar icon="i-lucide-user-round" src="#" size="2xl" />
                 </UChip>
                 <div class="grid gap-2 pl-3">
                     <span class="text-slate-800 text-sm font-semibold leading-5">Константин Константинопольский</span>
@@ -51,10 +51,12 @@
         <section class="flex-col-2 mb-[60px]">
             <div class="flex gap-4 pb-4 h-auto">
                 <UButton color="neutral" variant="outline"
-                    class="flex flex-col w-[164px] text-Slate-800 text-base font-medium leading-normal p-3 items-start">
+                    class="flex flex-col w-full text-Slate-800 text-base font-medium leading-normal p-3 items-start">
                     <div class="flex">
-                        <UBadge bg="neutral" variant="soft" icon="i-lucide-sparkles w-full" color="secondary"
-                            class="size-12 p-3 items-center"></UBadge>
+                        <UBadge bg="neutral" variant="soft" color="secondary" class="size-12 p-3 items-center">
+                            <UIcon name="i-lucide-sparkles" color="secondary"
+                                class="py-2.5 px-1.5 mr-auto w-full size-6" />
+                        </UBadge>
                     </div>
                     <div>
                         <h3 class="">Подбор товаров</h3>
@@ -63,10 +65,12 @@
                 </UButton>
 
                 <UButton color="neutral" variant="outline"
-                    class="flex flex-col w-[164px] text-Slate-800 text-base font-medium leading-normal p-3 items-start">
+                    class="flex flex-col w-full text-Slate-800 text-base font-medium leading-normal p-3 items-start">
                     <div class="flex">
-                        <UBadge bg="neutral" variant="soft" icon="i-lucide-shopping-bag w-full" color="secondary"
-                            class="size-12 p-3 items-center"></UBadge>
+                        <UBadge bg="neutral" variant="soft" color="secondary" class="size-12 p-2 items-center">
+                            <UIcon name="i-lucide-shopping-bag" color="secondary"
+                                class="py-2.5 px-1.5 mr-auto w-full size-6" />
+                        </UBadge>
                     </div>
                     <div>
                         <h3 class="">Выдача заказа</h3>
@@ -77,8 +81,8 @@
             <UButton color="neutral" variant="outline"
                 class=" flex w-full h-[72px] text-Slate-800 text-base font-medium leading-normal p-3 gap-3 justify-start">
                 <div class="flex">
-                    <UBadge bg="neutral" variant="soft" icon="i-lucide-users w-full" color="secondary"
-                        class="size-12 p-3 items-center"></UBadge>
+                    <UBadge bg="neutral" variant="soft" icon="i-lucide-users w-full size-6" color="secondary"
+                        class="size-12  items-center"></UBadge>
                 </div>
                 <div>
                     <h3 class="">Поиск/регистрация клиента</h3>
@@ -94,25 +98,26 @@
         </div>
         <!-- <UNavigationMenu :items="items" class="w-full justify-center" color="secondary" variant="link"
             orientation="horizontal" /> -->
-        <nav class="flex w-full grow gap-[27px] h-11 j">
-            <UButton icon="i-lucide-house w-full size-6" label="" variant="link" color="secondary"
+        <nav class="flex w-full grow gap-[27px] h-11 items-center justify-center">
+            <UButton variant="link" color="secondary"
                 class="flex-col w-auto h-6 p-0 text-xs font-semibold leading-none">
+                <UIcon name="i-lucide-house" class="py-2.5 px-1.5 mr-auto w-full size-6" />
                 <span>Главная</span>
             </UButton>
-            <UButton icon="i-lucide-text-search w-full size-6" label="" variant="link" color="neutral"
-                class="flex-col w-auto h-6 p-0 text-xs font-semibold leading-none">
+            <UButton variant="link" color="neutral" class="flex-col w-auto h-6 p-0 text-xs font-semibold leading-none">
+                <UIcon name="i-lucide-text-search" class="py-2.5 px-1.5 mr-auto w-full size-6" />
                 <span>Каталог</span>
             </UButton>
-            <UButton icon="i-lucide-users w-full size-6" label="" variant="link" color="neutral"
-                class="flex-col w-auto h-6 p-0 text-xs font-semibold leading-none">
+            <UButton variant="link" color="neutral" class="flex-col w-auto h-6 p-0 text-xs font-semibold leading-none">
+                <UIcon name="i-lucide-users" class="py-2.5 px-1.5 mr-auto w-full size-6" />
                 <span>Клиенты</span>
             </UButton>
-            <UButton icon="i-lucide-package w-full size-6" label="" variant="link" color="neutral"
-                class="flex-col w-auto h-6 p-0 text-xs font-semibold leading-none">
+            <UButton variant="link" color="neutral" class="flex-col w-auto h-6 p-0 text-xs font-semibold leading-none">
+                <UIcon name="i-lucide-package" class="py-2.5 px-1.5 mr-auto w-full size-6" />
                 <span>Заказы</span>
             </UButton>
-            <UButton icon="i-lucide-user-round w-full size-6" label="" variant="link" color="neutral"
-                class="flex-col w-auto h-6 p-0 text-xs font-semibold leading-none">
+            <UButton variant="link" color="neutral" class="flex-col w-auto h-6 p-0 text-xs font-semibold leading-none">
+                <UIcon name="i-lucide-user-round" class="py-2.5 px-1.5 mr-auto w-full size-6" />
                 <span>Профиль</span>
             </UButton>
         </nav>
