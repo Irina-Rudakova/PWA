@@ -90,7 +90,7 @@
             </UButton>
 
         </section>
-        <div class="mb-[166px]">
+        <div class="">
             <UButton icon="i-lucide-shopping-cart" label="Корзина и оформление" color="secondary" size="xl"
                 class="justify-center w-full mb-4" />
             <UButton icon="i-lucide-scan-barcode" label="Сканировать товар" color="secondary" variant="outline"
@@ -98,7 +98,7 @@
         </div>
         <!-- <UNavigationMenu :items="items" class="w-full justify-center" color="secondary" variant="link"
             orientation="horizontal" /> -->
-        <nav class="flex w-full grow gap-[27px] h-11 items-center justify-center">
+        <nav class="flex w-full grow gap-[27px] h-11 items-center justify-center fixed bottom-14 left-0 right-0">
             <UButton variant="link" color="secondary"
                 class="flex-col w-auto h-6 p-0 text-xs font-semibold leading-none">
                 <UIcon name="i-lucide-house" class="py-2.5 px-1.5 mr-auto w-full size-6" />

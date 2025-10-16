@@ -17,7 +17,7 @@
             </div>
         </section>
 
-        <div class="mb-8 bg-slate-500 rounded-2xl h-[510px] p-6 flex-col">
+        <div class=" bg-slate-500 rounded-2xl h-[510px] p-6 flex-col">
             <UIcon name="i-lucide-flashlight" class="size-6  bg-white flex justify-end ml-auto mb-[164px]" />
             <section class="wrap">
                 <div class="h-20 bg-white rounded-lg mb-2 items-center flex justify-center">
@@ -30,7 +30,7 @@
 
         </div>
 
-        <nav class="flex w-full grow gap-[27px] h-11 items-center justify-center">
+        <nav class="flex w-full grow gap-[27px] h-11 items-center justify-center fixed bottom-14 left-0 right-0">
             <UButton variant="link" color="secondary"
                 class="flex-col w-auto h-6 p-0 text-xs font-semibold leading-none">
                 <UIcon name="i-lucide-house" class="py-2.5 px-1.5 mr-auto w-full size-6" />

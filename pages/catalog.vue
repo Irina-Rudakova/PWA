@@ -15,11 +15,11 @@
                 <UButton icon="i-lucide-scan-barcode" color="secondary" variant="outline" size="xl" />
             </div>
 
-            <UButton icon="i-lucide-sparkles size-6" label="ИИ-подбор товаров" bg="neutral" variant="soft"
-                color="secondary" size="xl" class="justify-center w-full text-base font-medium" />
+            <UButton icon="i-lucide-sparkles" label="ИИ-подбор товаров" color="secondary" variant="soft" size="xl"
+                class="justify-center w-full" />
         </section>
 
-        <div class="mb-[22px] flex-col wrap">
+        <div class="flex-col wrap">
             <UButton color="neutral" variant="ghost" size="xl" class="justify-between w-full ">
                 <span>Инструмент</span>
                 <UIcon name="i-lucide-chevron-right" class="size-6" />
@@ -81,13 +81,13 @@
 
         <!-- <UNavigationMenu :items="items" class="w-full justify-center" color="secondary" variant="link"
             orientation="horizontal" /> -->
-        <nav class="flex w-full grow gap-[27px] h-11 items-center justify-center">
-            <UButton variant="link" color="secondary"
-                class="flex-col w-auto h-6 p-0 text-xs font-semibold leading-none">
+        <nav class="flex w-full grow gap-[27px] h-11 items-center justify-center fixed bottom-14 left-0 right-0">
+            <UButton variant="link" color="neutral" class="flex-col w-auto h-6 p-0 text-xs font-semibold leading-none">
                 <UIcon name="i-lucide-house" class="py-2.5 px-1.5 mr-auto w-full size-6" />
                 <span>Главная</span>
             </UButton>
-            <UButton variant="link" color="neutral" class="flex-col w-auto h-6 p-0 text-xs font-semibold leading-none">
+            <UButton variant="link" color="secondary"
+                class="flex-col w-auto h-6 p-0 text-xs font-semibold leading-none">
                 <UIcon name="i-lucide-text-search" class="py-2.5 px-1.5 mr-auto w-full size-6" />
                 <span>Каталог</span>
             </UButton>
