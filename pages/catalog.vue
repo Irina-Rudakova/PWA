@@ -12,7 +12,8 @@
             <div class="flex gap-2 justify-between mb-6">
                 <UInput icon="i-lucide-search" color="neutral" size="xl" placeholder="Поиск товаров" variant="soft"
                     class="w-full" />
-                <UButton icon="i-lucide-scan-barcode" color="secondary" variant="outline" size="xl" />
+                <UButton icon="i-lucide-scan-barcode" color="secondary" variant="outline" size="xl"
+                    class="w-12 justify-center py-2 px-3" />
             </div>
 
             <UButton icon="i-lucide-sparkles" label="ИИ-подбор товаров" color="secondary" variant="soft" size="xl"

@@ -1,32 +1,5 @@
 <script setup lang="ts">
-// import type { NavigationMenuItem } from '@nuxt/ui'
 
-// const items: NavigationMenuItem[] = [
-//     {
-//         label: 'Главная',
-//         icon: 'i-lucide-house',
-//         active: true,
-//         button: 'wrap'
-//     },
-//     {
-//         label: 'Каталог',
-//         icon: 'i-lucide-text-search',
-
-//     },
-//     {
-//         label: 'Клиенты',
-//         icon: 'i-lucide-users',
-
-//     },
-//     {
-//         label: 'Заказы',
-//         icon: 'i-lucide-package',
-//     },
-//     {
-//         label: 'Профиль',
-//         icon: 'i-lucide-circle-user-round',
-//     }
-// ]
 </script>
 
 <template>
@@ -90,14 +63,17 @@
             </UButton>
 
         </section>
-        <div class="">
-            <UButton icon="i-lucide-shopping-cart" label="Корзина и оформление" color="secondary" size="xl"
-                class="justify-center w-full mb-4" />
+        <div>
+            <UChip inset :text="2" size="3xl"
+                class="w-full text-xs font-normal leading-none self-stretch text-center justify-start">
+                <UButton icon="i-lucide-shopping-cart" label="Корзина и оформление" color="secondary" size="xl"
+                    class="justify-center w-full mb-4" />
+            </UChip>
+
             <UButton icon="i-lucide-scan-barcode" label="Сканировать товар" color="secondary" variant="outline"
                 size="xl" class="justify-center w-full" />
         </div>
-        <!-- <UNavigationMenu :items="items" class="w-full justify-center" color="secondary" variant="link"
-            orientation="horizontal" /> -->
+
         <nav class="flex w-full grow gap-[27px] h-11 items-center justify-center fixed bottom-14 left-0 right-0">
             <UButton variant="link" color="secondary"
                 class="flex-col w-auto h-6 p-0 text-xs font-semibold leading-none">
