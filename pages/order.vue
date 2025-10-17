@@ -21,23 +21,30 @@ const items = ref<TabsItem[]>([
                 <span class="text-Slate-800 text-lg font-medium leading-7 mr-auto">Выдача заказа</span>
             </div>
 
-            <div
+            <!-- <div
                 class="w-full h-10 text-sm font-medium leading-tight rounded-md inline-flex bg-elevated mb-6 justify-center items-center">
                 <UButton color="neutral" variant="solid" label="Номер заказа"
                     class="w-full h-8 gap-1.5 justify-center items-center flex-1 px-2.5 py-1.5" />
                 <UButton color="neutral" variant="soft" label="Номер телефона"
                     class="w-full h-8 gap-1.5 justify-center items-center flex-1 px-2.5 py-1.5" />
-            </div>
-
+            </div> 
             <div class="flex gap-2 justify-between">
-                <UInput color="neutral" size="xl" placeholder="items" variant="soft" class="w-full"
+                <UInput color="neutral" size="xl" placeholder="Заказ" variant="soft" class="w-full"
                     trailing-icon="i-lucide-search" />
 
-                <!-- placeholder="Заказ" -->
-            </div>
-            <UInput>
-                <UTabs :items="items" class="w-full" />
-            </UInput>
+                placeholder="Телефон"
+             </div> -->
+
+            <UTabs :items="items" class="w-full justify-center items-center gap-6" color="neutral">
+                <template #content="{ item }">
+                    <div class="flex gap-2 justify-between">
+                        <UInput size="xl" :placeholder="item.content" variant="soft"
+                            class="w-full text-base font-normal justify-center items-center"
+                            trailing-icon="i-lucide-search">
+                        </UInput>
+                    </div>
+                </template>
+            </UTabs>
 
 
         </section>
