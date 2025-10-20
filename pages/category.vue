@@ -23,15 +23,14 @@
                 <p class="justify-start text-slate-400 text-xs font-normal leading-none">120 товаров</p>
             </div>
             <div>
-                <UButton icon="i-lucide-sliders-vertical" color="neutral" variant="outline" size="xl"
-                    class="justify-center w-full">Фильтры</UButton>
+                <UButton icon="i-lucide-sliders-vertical" color="neutral" size="xl" class="justify-center w-full">
+                    Фильтры</UButton>
             </div>
         </section>
 
-        <article class="flex w-full gap-4 mt-6">
-            <div class="outline-amber-400 outline-1 size-[74px] items-center justify-center">
-                <img src="#" alt="Фото дрели" class="size-[74px] ">
-
+        <article class="grid grid-flow-col w-full gap-4 mt-6 ">
+            <div class="items-center justify-center w-[74px]">
+                <NuxtImg src="../public/image 2.png" alt="Фото дрели" class="h-[74px]" />
             </div>
 
             <article class="">
@@ -92,10 +91,9 @@
             </article>
         </article>
 
-        <article class="flex w-full gap-4 mt-6">
-            <div class="outline-amber-400 outline-1 size-[74px] items-center justify-center">
-                <img src="#" alt="Фото дрели" class="size-[74px] ">
-
+        <article class="grid grid-flow-col w-full gap-4 mt-6 ">
+            <div class="items-center justify-center w-[74px]">
+                <NuxtImg src="../public/image 2.png" alt="Фото дрели" class="h-[74px]" />
             </div>
 
             <article class="">
